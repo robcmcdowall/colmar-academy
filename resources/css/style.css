@@ -1,0 +1,522 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #4a4a4a;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+a {
+  color: #4a4a4a;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+img,
+video {
+vertical-align: bottom;
+}
+
+/* Header */
+
+.skip {
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+
+.skip:focus {
+  height: auto;
+  position: static;
+  width: auto;
+}
+
+header {
+  background-color: white;
+  border-bottom: solid 1px #eee;
+  height: 4rem;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-container {
+  align-items: center;
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.logo-img {
+  height: 3rem;
+  margin-top: .25rem;
+}
+
+.logo-span {
+  color: #a8a6a6;
+}
+
+/* Navigation */
+
+.primary-nav ul {
+  display: flex;
+}
+
+.primary-nav li {
+  padding-left: 1rem;
+}
+
+/* Main */
+
+.main-content {
+  position: relative;
+  top: 4rem;
+}
+
+/* Hero Section */
+
+.hero {
+  background-color: #dddada;
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem 0 2rem 1.5rem;
+}
+
+.hero-main-section {
+  width: 60%;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.hero-text-section {
+  padding-left: 1rem;
+  padding-right: 20%;
+}
+
+.hero-title {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.hero-copy {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+
+.cta-btn {
+  background-color: #4a4a4a;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  text-align: center;
+  transition: opacity ease-in 0.2s;
+  width: 100%;
+}
+
+.cta-btn:hover {
+  opacity: .90;
+}
+
+/* Campus Information Section */
+
+.campus-info-section {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0 0 0 1.5rem;
+  scroll-margin-top: 4rem;
+}
+
+.campus-info-main-section {
+  margin: 2rem 0;
+  width: 60%;
+}
+
+.campus-info-section-title {
+  line-height: 1;
+  margin: 2rem 0 1.5rem;
+  font-size: 2rem;
+}
+
+.campus-quote-author {
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-top: 2rem; 
+}
+
+.campus-info-section .info-cards {
+  border-left: solid 1px #eee;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.info-card {
+  align-items: center;
+  display: flex;
+  padding: 1rem;
+}
+
+.info-card-img-section {
+  width: 35%;
+}
+
+.info-card-text-section {
+  padding: 1rem;
+  width: 65%;
+}
+
+.info-copy {
+  margin: 0.5rem 0;
+}
+
+.info-link {
+  color: #6868d7;
+}
+
+/* Individual Campus Information Section Cards */
+
+.campus-info-section .info-card:first-of-type {
+  padding-top: 2rem;
+}
+
+.campus-info-section .info-card:last-of-type {
+  background-color: #dddada;
+}
+
+.campus-info-section .info-card:nth-of-type(2) {
+  border-top: solid 1px #eee;
+}
+
+/* Course & Exhibition Titles */
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Courses Section */
+
+.courses-section {
+  background-color: #eee;
+  padding: 2rem 4.5rem 2rem 4.5rem;
+  scroll-margin-top: 4rem;
+}
+
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.course-card {
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  flex-basis: 30%;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.course-text-section {
+  padding: 1rem 1rem 1.5rem;
+}
+
+.course-subtitle {
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+}
+
+/* Exhibition section */
+
+.exhibition-section {
+  border-bottom: solid 1px #eee;
+  padding: 2rem 0 2rem 1.5rem;
+}
+
+.exhibition-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.exhibition-video-section {
+  width: 60%;
+}
+
+.exhibition-video-section video {
+  vertical-align: bottom;
+}
+
+.exhibition-text-section {
+  padding: 1.5rem 0 0;
+}
+
+.exhibition-title {
+  margin-bottom: .5rem;
+}
+
+.exhibition-container .info-cards {
+  padding-top: 0;
+  width: 40%;
+}
+
+.exhibition-section .info-card {
+  cursor: pointer;
+}
+
+/* Individual Exhibition Section Cards */ 
+
+.exhibition-section .info-card:first-of-type {
+  background-color: #dddada;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  font-size: .9rem;
+  justify-content: space-between;
+  padding: 1rem 1.5rem 4.5rem;
+}
+
+.footer-policy-list {
+  display: flex;
+}
+
+.footer-policy-item {
+  padding-left: 0.625rem;
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 760px) {
+  .primary-nav-mobile {
+    display: none;
+  }
+
+  /* Campus Information Section */
+
+  .mobile-info-img {
+    display: none;
+  }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 760px) {  
+  .header-container {
+    padding: 0;
+  }
+ 
+  /* Navigation */
+
+  .primary-nav {
+  display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .primary-nav-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .primary-nav-mobile ul {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .primary-nav-mobile li {
+    line-height: 0;
+    padding: 1rem 2rem;
+  }
+
+  /* Main Content */
+  
+  .main-content {
+    top: 4rem;
+  }
+
+  /* Hero Section */
+
+  .hero {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+  }
+
+  .hero-main-section,
+  .hero-text-container {
+    padding: 0;
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-text-section {
+    padding: 2rem 1rem 2rem 1rem;
+  }
+
+  .hero-copy {
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-btn {
+    background-color: #8c8a8a;
+  }
+
+  /* Campus Information Section */
+
+  .campus-info-section {
+    border-bottom: solid 1px #eee;
+    flex-direction: column;
+    padding: 0 0 1rem;
+    scroll-margin-top: 3.9rem;
+  }
+
+  .campus-info-main-section {
+    display: none;
+  }
+
+  .campus-info-section .info-cards {
+    gap: 1rem;
+    padding-bottom: 0;
+    width: 100%;
+  }
+
+  .info-card {
+    flex-direction: column;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .info-card-img-section,
+  .info-card-text-section {
+    width: 100%;
+  }
+
+  .campus-info-section .info-card-img-section {
+    margin-bottom: 1rem;
+  }
+
+  .campus-info-section .info-img {
+    display: none;
+  }
+
+  .campus-info-section .info-card-text-section-inner {
+    margin-left: 1rem;
+  }
+
+  /* Individual Campus Information Section Cards */
+
+  .campus-info-section .info-card:first-of-type {
+    padding-top: 1rem;
+  }
+
+  .campus-info-section .info-card:last-of-type {
+    background-color: transparent;
+  }
+
+  /* Course & Exhibtion Titles */ 
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  /* Courses Section */
+
+  .courses-section {
+    background-color: transparent;
+    border-bottom: solid 1px #eee;
+    padding: 0 0 3rem;
+    scroll-margin-top: 5.5rem;
+  }
+
+  .course-text-section {
+    background-color: #dddada;
+    padding: 1.5rem 1rem;
+  }
+
+  .course-container {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  .course-img,
+  .course-subtitle,
+  .course-copy {
+    display: none;
+  }
+
+  /* Exhibition Section */
+
+  .exhibition-section {
+    padding: 0;
+  }
+
+  .exhibition-container {
+    border-bottom: none;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+  }
+
+  .exhibition-video-section {
+    padding: 0;
+    width: 100%;
+  }
+
+  .exhibition-container .info-cards,
+  .exhibition-text-section {
+    display: none;
+  }
+
+  /* Footer */
+
+  footer {
+    padding-bottom: 1rem;
+  }
+
+  .footer-policy-list {
+    display: none;
+  }
+}
