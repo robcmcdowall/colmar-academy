@@ -331,6 +331,13 @@ footer {
   .mobile-info-img {
     display: none;
   }
+
+  /* Courses Section */
+
+  .course-container {
+    margin-inline: auto;
+    max-width: 100rem;
+  }
 }
 
 /* Mobile */
