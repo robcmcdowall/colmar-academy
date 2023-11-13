@@ -31,18 +31,16 @@ vertical-align: bottom;
 /* Header */
 
 .skip {
-  height: 1px;
-  left: -10000px;
-  overflow: hidden;
+  background-color: white;
+  padding: .25em;
   position: absolute;
-  top: auto;
-  width: 1px;
+  transform: translateY(-100%);
+  transition: transform 250ms ease-in;
+  z-index: 9999;
 }
 
 .skip:focus {
-  height: auto;
-  position: static;
-  width: auto;
+  transform: translateY(0);
 }
 
 header {
